@@ -108,7 +108,7 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Gamepad",
+                    "name": "Left-Stick",
                     "id": "c7b91524-3643-45d8-8cf0-858686d34463",
                     "path": "2DVector",
                     "interactions": "",
