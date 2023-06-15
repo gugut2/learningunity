@@ -9,6 +9,8 @@ public class MovementInput : MonoBehaviour
 
     PlayerInput input = null;
 
+    private bool moveIsPressed = false;
+
     private void OnEnable() 
     {
         input = new PlayerInput();
@@ -29,5 +31,6 @@ public class MovementInput : MonoBehaviour
     private void SetMove(InputAction.CallbackContext context)
     {
         MoveInput = context.ReadValue<Vector2>();
+        moveIsPressed = !(MoveInput == Vector2.zero);
     }
 }

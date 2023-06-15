@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     private Quaternion quaternion = Quaternion.Euler(50f, 0f, 0f);
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {   
         ApplyPan();
     }

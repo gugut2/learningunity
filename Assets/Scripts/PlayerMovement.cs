@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ApplyMovement()
     {
-        playerController.Move(currentDirection * speed * Time.deltaTime);
+        playerController.Move(currentDirection * speed * Time.fixedDeltaTime);
         if(playerInput.x == 0 && playerInput.y == 0)
         {
             isMoving = false;
